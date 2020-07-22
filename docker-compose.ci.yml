@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    entrypoint: /entrypoint.test.sh
+    environment: 
+      - APP_ENV=test
+      - DATABASE_URL
+      - COMPOSER_MEMORY_LIMIT=-1

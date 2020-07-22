@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: laravel_test_app
+    entrypoint: /entrypoint.test.sh
+    environment: 
+      APP_ENV: test
+      DATABASE_URL: mysql://root:root@db/laravel_test
