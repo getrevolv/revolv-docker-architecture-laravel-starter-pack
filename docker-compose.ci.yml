@@ -8,5 +8,11 @@ services:
     entrypoint: /entrypoint.test.sh
     environment: 
       - APP_ENV=test
+      - APP_KEY=base64:ctzTKtS6IAp0WK4PvOfIksZPh4Kb1ooJ4fp287iFEVQ=
       - DATABASE_URL
+      - DB_DATABASE
+      - DB_HOST
+      - DB_PORT
+      - DB_USERNAME
+      - DB_PASSWORD
       - COMPOSER_MEMORY_LIMIT=-1
